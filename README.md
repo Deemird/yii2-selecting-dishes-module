@@ -1,7 +1,15 @@
 # yii2-selecting-dish-module
 
-Модуль находится в директории: common/modules/selectingDishes/
+Директория модуля: common/modules/selectingDishes/
 
-Миграции находятся в директории: console/migrations/
+В конфиг нужно добавить: 
+
+'modules' => [
+        'selectingDishes' => [
+            'class' => 'common\modules\selectingDishes\SelectingDishesModule',
+        ],
+    ],
+
+Миграции находятся в директории: migrations
 
 На всякий случай в папке dump находится обычный дамп базы данных для mysql.
